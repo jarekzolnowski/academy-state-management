@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card">
+    <h5 class="card-header bg-dark text-light">Post list <i class="fa fa-plus fa-pull-right text-info" (click)="addPost()"></i></h5>
+    <div class="card-body bg-light mb-2" *ngFor="let post of posts">
+      <h5 class="card-title">{{post.title}} <i class="fa fa-times fa-pull-right text-danger" (click)="removePost(post)"></i></h5>
+      <p class="card-text">{{post.body}}</p>
+      <a href="#" class="card-link">More details</a>
+    </div>
+  </div>
+</div>
